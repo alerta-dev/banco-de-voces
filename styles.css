@@ -35,6 +35,13 @@ h3 {
     color: #333;
     margin-bottom: 20px;
 }
+link {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;  /* Usamos el peso 600 de Poppins */
+    color: #333;
+    margin-bottom: 20px;
+}
 ul {
     list-style: none;
     padding: 0;
