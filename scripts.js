@@ -2,6 +2,18 @@ const mediaItems = [
     { name: "Persona 1", src: "audios/audio1.mp3", type: "audio", contact: "mailto:persona1@example.com" },
     { name: "Persona 2", src: "audios/audio2.mp3", type: "audio", contact: "https://twitter.com/persona2" },
     { name: "Persona 3", src: "videos/video1.mp4", type: "video", contact: "mailto:persona3@example.com" },
+    { name: "Persona 4", src: "videos/video1.mp4", type: "video", contact: "mailto:persona3@example.com" },
+    { name: "Persona 5", src: "videos/video1.mp4", type: "video", contact: "mailto:persona3@example.com" },
+    { name: "Persona 6", src: "videos/video1.mp4", type: "video", contact: "mailto:persona3@example.com" },
+    { name: "Persona 7", src: "videos/video1.mp4", type: "video", contact: "mailto:persona3@example.com" },
+    { name: "Persona 8", src: "videos/video1.mp4", type: "video", contact: "mailto:persona3@example.com" },
+    { name: "Persona 9", src: "videos/video1.mp4", type: "video", contact: "mailto:persona3@example.com" },
+    { name: "Persona 10", src: "videos/video1.mp4", type: "video", contact: "mailto:persona3@example.com" },
+    { name: "Persona 11", src: "videos/video1.mp4", type: "video", contact: "mailto:persona3@example.com" },
+    { name: "Persona 12", src: "videos/video1.mp4", type: "video", contact: "mailto:persona3@example.com" },
+    { name: "Persona 13", src: "videos/video1.mp4", type: "video", contact: "mailto:persona3@example.com" },
+    { name: "Persona 14", src: "videos/video1.mp4", type: "video", contact: "mailto:persona3@example.com" },
+
     // Añade más audios y videos aquí
 ];
 const mediaList = document.getElementById('audioList'); // Lista donde se insertarán los audios/videos
