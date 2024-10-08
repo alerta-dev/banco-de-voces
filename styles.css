@@ -1,16 +1,4 @@
-/* Estilo general */
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    color: #333;
-}
-
+/* Contenedor principal */
 .container {
     width: 90%;
     max-width: 900px;
@@ -25,7 +13,6 @@ h1 {
     font-size: 2rem;
     color: #333;
     margin-bottom: 20px;
-    letter-spacing: 1px;
 }
 
 ul {
@@ -55,6 +42,7 @@ span {
     color: #444;
 }
 
+/* Botones */
 button {
     padding: 10px 15px;
     background-color: #007bff;
@@ -70,6 +58,7 @@ button:hover {
     background-color: #0056b3;
 }
 
+/* Botón de contacto */
 .contact-button {
     padding: 8px 12px;
     background-color: #28a745;
@@ -85,21 +74,16 @@ button:hover {
     background-color: #218838;
 }
 
+/* Estilo de video */
+video {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de audio */
 audio {
     width: 100%;
     margin-top: 10px;
-    outline: none;
-}
-
-@media (max-width: 600px) {
-    li {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    button, .contact-button {
-        width: 100%;
-        text-align: center;
-        margin-top: 10px;
-    }
 }
