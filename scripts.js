@@ -1,7 +1,7 @@
 const audios = [
     { name: "Persona 1", src: "audios/audio1.mp3", contact: "mailto:persona1@example.com" },
     { name: "Persona 2", src: "audios/audio2.mp3", contact: "https://twitter.com/persona2" },
-    { name: "Persona 3", src: "audios/Creep_Radiohead_dexy.mp4", contact: "mailto:persona3@example.com" },
+    { name: "Persona 3", src: "audios/audio3", contact: "mailto:persona3@example.com" },
     // Añade más audios y contactos aquí
 ];
 
