@@ -6,7 +6,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;  /* Asegura que ocupe toda la altura de la pantalla */
     
     /* Imagen de fondo */
     background-image: url('images/background.png');  /* Reemplaza con la ruta a tu imagen */
