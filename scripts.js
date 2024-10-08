@@ -1,46 +1,54 @@
-const audios = [
-    { name: "Persona 1", src: "audios/audio1.mp3", contact: "mailto:persona1@example.com" },
-    { name: "Persona 2", src: "audios/audio2.mp3", contact: "https://twitter.com/persona2" },
-    { name: "Persona 3", src: "audios/audio3.mp3", contact: "mailto:persona3@example.com" },
-    // Añade más audios y contactos aquí
+const mediaItems = [
+    { name: "Persona 1", src: "audios/audio1.mp3", type: "audio", contact: "mailto:persona1@example.com" },
+    { name: "Persona 2", src: "audios/audio2.mp3", type: "audio", contact: "https://twitter.com/persona2" },
+    { name: "Persona 3", src: "videos/video1.mp4", type: "video", contact: "mailto:persona3@example.com" },
+    // Añade más audios y videos aquí
 ];
+const mediaList = document.getElementById('audioList'); // Lista donde se insertarán los audios/videos
 
-const audioList = document.getElementById('audioList');
-
-audios.forEach(audio => {
+mediaItems.forEach(item => {
     const listItem = document.createElement('li');
     
     const title = document.createElement('span');
-    title.textContent = audio.name;
+    title.textContent = item.name;
     
     const button = document.createElement('button');
     button.textContent = 'Reproducir';
     
     const contactButton = document.createElement('a');
-    contactButton.href = audio.contact;
+    contactButton.href = item.contact;
     contactButton.textContent = 'Contacto';
-    contactButton.classList.add('contact-button'); // Clase para estilo
+    contactButton.classList.add('contact-button'); // Clase para el estilo
     contactButton.target = '_blank';  // Abre el contacto en una nueva pestaña
-    
-    const audioElement = document.createElement('audio');
-    audioElement.controls = true;
-    audioElement.src = audio.src;
-    audioElement.style.display = 'none';
-    
+
+    // Crear un elemento de audio o video según el tipo
+    let mediaElement;
+    if (item.type === 'audio') {
+        mediaElement = document.createElement('audio');
+    } else if (item.type === 'video') {
+        mediaElement = document.createElement('video');
+        mediaElement.width = 400;  // Ajustar el tamaño del video
+    }
+
+    mediaElement.controls = true;  // Mostrar los controles (play, pause, volumen, etc.)
+    mediaElement.src = item.src;
+    mediaElement.style.display = 'none';  // Ocultar hasta que se haga clic en reproducir
+
+    // Mostrar y reproducir al hacer clic en el botón
     button.addEventListener('click', () => {
-        if (audioElement.style.display === 'none') {
-            audioElement.style.display = 'block';
+        if (mediaElement.style.display === 'none') {
+            mediaElement.style.display = 'block';
         } else {
-            audioElement.style.display = 'none';
-            audioElement.pause();
-            audioElement.currentTime = 0;
+            mediaElement.style.display = 'none';
+            mediaElement.pause();  // Pausar si se oculta
+            mediaElement.currentTime = 0;  // Reiniciar desde el principio
         }
     });
     
     listItem.appendChild(title);
     listItem.appendChild(button);
     listItem.appendChild(contactButton);
-    listItem.appendChild(audioElement);
+    listItem.appendChild(mediaElement);
     
-    audioList.appendChild(listItem);
+    mediaList.appendChild(listItem);  // Añadir el elemento a la lista
 });
