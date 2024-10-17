@@ -1,7 +1,7 @@
 const mediaItems = [
     { name: "GeekBoy", src: "videos/GeekBoy.mp4", type: "video", contact: "https://discord.com/users/1004786814525116548" },
     { name: "Ñaki", src: "videos/Ñaki.mp4", type: "video", contact: "https://discord.com/users/769361328364060723" },
-    { name: "Persona 3", src: "videos/video1.mp4", type: "video", contact: "mailto:persona3@example.com" },
+    { name: "Basil", src: "videos/Basil.mp4", type: "video", contact: "https://discord.com/users/1276778822783471646" },
     { name: "Persona 4", src: "videos/video1.mp4", type: "video", contact: "mailto:persona3@example.com" },
     { name: "Persona 5", src: "videos/video1.mp4", type: "video", contact: "mailto:persona3@example.com" },
     { name: "Persona 6", src: "videos/video1.mp4", type: "video", contact: "mailto:persona3@example.com" },
