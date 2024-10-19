@@ -8,7 +8,7 @@ const mediaItems = [
     { name: "AquaDubs", src: "videos/AquaDubs.mp4", type: "video", contact: "https://discord.com/users/651172781807108150" },
     { name: "Nexu", src: "videos/NEXU.mp4", type: "video", contact: "https://discord.com/users/1038870752616796350" },
     { name: "MiliDubs", src: "videos/MiliDubs.mp3", type: "audio", contact: "https://discord.com/users/1181402871464468482" },
-    { name: "Persona 10", src: "videos/video1.mp4", type: "video", contact: "mailto:persona3@example.com" },
+    { name: "Scara Saiko", src: "videos/Scara Saiko.mp4", type: "video", contact: "https://discord.com/users/788175675973566504" },
     { name: "Persona 11", src: "videos/video1.mp4", type: "video", contact: "mailto:persona3@example.com" },
     { name: "Persona 12", src: "videos/video1.mp4", type: "video", contact: "mailto:persona3@example.com" },
     { name: "Persona 13", src: "videos/video1.mp4", type: "video", contact: "mailto:persona3@example.com" },
